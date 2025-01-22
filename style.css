@@ -1,0 +1,262 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf3; /* Doux et chaleureux */
+    color: #4a3f35; /* Teinte terre pour les textes */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #a3572e; /* Ton chaud rappelant les épices */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ffffff, #4caf50); /* Dégradé du blanc (#ffffff) au vert (#4caf50) */
+    padding: 5px 20px;
+    flex-wrap: wrap; /* Permet une adaptation sur petits écrans */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Légère ombre pour l'effet */
+}
+.navbar .nav-link {
+    text-decoration: none;
+    color: #ffffff; /* Couleur du texte pour contraster avec le vert */
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+    color: #e8f5e9; /* Couleur plus claire au survol */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.brand-name {
+    font-size: 1.8rem;
+    color: #f9f4e1;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Navigation adaptable */
+    justify-content: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #f9f4e1;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffcb6b;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-image: url('./images/pouvre_blanc.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay sombre */
+    z-index: -1;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.8);
+    color: #4a3f35;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #a3572e;
+}
+
+section p {
+    margin-bottom: 40px;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grille */
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    color: #8c4b28;
+    margin-top: 10px;
+}
+
+.card p {
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to left, #725835, #9c8e4e);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ffcb6b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Une seule colonne sur petits écrans */
+    }
+}
+
+@media (max-width: 380px) {
+    .navbar {
+        flex-direction: column; /* Navigation verticale */
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+}

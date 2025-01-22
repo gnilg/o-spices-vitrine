@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ospices - Découvrez nos épices uniques et savoureuses, soigneusement sélectionnées pour sublimer vos plats.">
+    <title>Ospices - Épices Authentiques</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning px-3">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./images/logo.JPG" alt="Logo Ospices" class="me-2" style="height: 50px;">
+            <div>
+                <h1 class="h4 m-0">O'spices</h1>
+                <p class="m-0 small">Pensez épices pensez O’spices</p>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Nos produits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero text-center text-white d-flex flex-column justify-content-center align-items-center" style="background: url('./images/pouvre_blanc.jpg') no-repeat center center / cover; height: 50vh;">
+        <h2 class="fw-bold">Des épices uniques pour une expérience culinaire inoubliable</h2>
+        <p>Découvrez notre sélection d'épices venues des quatre coins du monde.</p>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold ">À propos de nous</h2>
+            <p>Chez Ospices, nous croyons que la cuisine est un art. Nous sélectionnons les meilleures épices pour vous aider à créer des plats exceptionnels, empreints de saveurs riches et authentiques.</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold  mb-4">Nos produits</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/melange.jpg" class="card-img-top" alt="Curcuma">
+                        <div class="card-body">
+                            <h3 class="card-title ">Curcuma</h3>
+                            <p class="card-text">Un trésor doré aux propriétés anti-inflammatoires et une saveur douce et terreuse.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/gingembre.jpg" class="card-img-top" alt="Poivre noir">
+                        <div class="card-body">
+                            <h3 class="card-title ">Poivre noir</h3>
+                            <p class="card-text">Rehaussez vos plats avec ce classique aux notes épicées et chaudes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/clou_girofle.jpg" class="card-img-top" alt="Cannelle">
+                        <div class="card-body">
+                            <h3 class="card-title ">Cannelle</h3>
+                            <p class="card-text">Une épice sucrée et boisée pour des desserts irrésistibles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold ">Contactez-nous</h2>
+            <p>Vous avez une question ou souhaitez en savoir plus sur nos produits ? Écrivez-nous à <a href="mailto:contact@ospices.com" class="text-warning fw-bold">contact@ospices.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-warning text-white text-center py-3">
+        <p class="m-0">&copy; 2025 Ospices. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
