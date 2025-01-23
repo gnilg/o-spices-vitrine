@@ -38,7 +38,7 @@ header p {
 }
 .navbar .nav-link {
     text-decoration: none;
-    color: #ffffff; /* Couleur du texte pour contraster avec le vert */
+    color: #0e0808; /* Couleur du texte pour contraster avec le vert */
     font-size: 1rem;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -54,8 +54,8 @@ header p {
 }
 
 .logo {
-    height: 50px;
-    margin-right: 15px;
+    height: 0px;
+    margin-right: 5px;
 }
 
 .brand-name {
